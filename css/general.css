@@ -16,6 +16,7 @@ body {
   "nav-bar-cell"
   "main-cell"
   "footer-cell"
+  "end-of-footer-cell"
   ;
 }
 
@@ -34,6 +35,9 @@ footer {
 main {
   grid-area: main-cell;
 }
+.end-of-footer {
+  grid-area: end-of-footer-cell;
+}
 
 
 .div-container {
@@ -49,6 +53,11 @@ a {
 
 
 /* top head css */
+.top-head {
+  position: fixed;
+  width: 100%;
+}
+
 .top-head {
   height: 31px;
   background-color: rgb(225, 225, 221);
