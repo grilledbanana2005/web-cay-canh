@@ -124,11 +124,18 @@ a {
 /* header css */
 
 header {
-  background-color: rgb(138, 198, 138);
-  height: 160px;
+  height: 20em;
   margin: 0;
   padding: 0;
 }
+
+.logo-web {
+  width: auto;
+  height: 320px;
+}
+
+
+/* nav-bar css */
 
 li {
     text-transform: capitalize;
@@ -138,10 +145,19 @@ li {
   list-style-type: none;
   margin: 0; padding: 0;
 }
+
 .nav-bar {
   height: 48px;
   background-color: rgb(235, 240, 226);
+  position: sticky;
+  top: 31px;
+  z-index: 10;
 }
+.nav-bar.sticky-active {
+  background-color: rgba(235, 240, 226, 0.915);
+  color: white;
+}
+
 .nav-selection a {
   display: block;
   text-align: center; text-decoration: none;
@@ -153,7 +169,7 @@ li {
   transition: background-color 0.16777s, color 0.16777s;
 } .nav-selection a:hover{
   /* background-color: rgba(10, 170, 10, 0.829); */
-  color: rgb(171, 203, 92);
+  color: rgb(171, 203, 92); 
 }
 
 .searching-bar {
